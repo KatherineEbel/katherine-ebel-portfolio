@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-navy: #0a1925;
+    --color-light-navy: #112240;
+    --color-lightest-navy: #233554;
+    --color-slate: #8892b0;
+    --color-light-slate: #a8b2d1;
+    --color-lightest-slate: #ccd6f6;
+    --color-white: #e6f2ff;
+    --color-green: #64ffda;
+    --color-green-hover: #96fcd9;
+}
+
+body {
+    @apply bg-navy text-white font-mono font-light
+}
