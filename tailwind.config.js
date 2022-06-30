@@ -1,3 +1,5 @@
+const colors = require('./node_modules/tailwindcss/colors')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,7 +20,8 @@ module.exports = {
         'lightest-slate': 'var(--color-lightest-slate)',
         white: 'var(--color-white)',
         green: 'var(--color-green)',
-        'light-green': 'var(--color-green-hover)'
+        'light-green': 'var(--color-green-hover)',
+        teal: colors.teal,
       },
       gridTemplateColumns: {
         'site': '80px 1fr 80px',
