@@ -1,7 +1,8 @@
 import styled, {css, keyframes} from "styled-components";
 import tw from "twin.macro";
-import React from "react";
+import React, {useRef} from "react";
 import {StyledLink} from "./styled/styled";
+import {useOnClickOutside} from "../hooks/useClickOutside";
 
 interface MobileNavProps {
     isHidden: boolean
@@ -18,18 +19,13 @@ export const CounterListItem = styled.li`
   }
 `
 
-const navLinks = ['About', 'Experience', 'Work', 'Contact'].map((link) => (
-    <CounterListItem key={link}><a className={`mb-4 text-[13px]`}
-                                   href={`#${link.toLowerCase()}`}>{link}</a></CounterListItem>
-))
-
 const StyledNavContainer = styled.div<Omit<MobileNavProps, 'toggleOpen'>>`
   ${tw`fixed transition-transform duration-500 inset-0 backdrop-blur-sm z-10`};
   ${({menuOpen}) => menuOpen ? tw`translate-x-0` : tw`translate-x-full`}
 `
 
 const StyledNavToggle = styled.button<Omit<MobileNavProps, 'toggleOpen'>>`
-  ${tw`absolute top-12 right-8 grid place-items-center z-20`};
+  ${tw`absolute top-12 right-8 grid place-items-center z-20 hover:bg-green`};
   ${({menuOpen}) => menuOpen && tw`fixed`};
   ${({isHidden}) => isHidden && tw`hidden`};
 `
@@ -49,21 +45,33 @@ const StyledNav = styled.nav<Omit<MobileNavProps, 'toggleOpen'>>`
 `
 
 const MobileNav = ({isHidden, menuOpen, toggleOpen}: MobileNavProps) => {
-    console.log(menuOpen)
+    const navLinks = ['About', 'Projects', 'Contact'].map((link) => (
+        <CounterListItem key={link}><a className={`mb-4 text-[13px]`} onClick={toggleOpen}
+                                       href={`#${link.toLowerCase()}`}>{link}</a></CounterListItem>
+    ))
+
+    const ref = useRef<HTMLDivElement>(null)
+
+    useOnClickOutside(ref, () => {
+        menuOpen && !isHidden && toggleOpen()
+    })
+
     return (
         <>
-            <StyledNavToggle menuOpen={menuOpen} isHidden={isHidden} aria-label="toggle navigation"
+            <StyledNavToggle id='nav-toggle' menuOpen={menuOpen} isHidden={isHidden} aria-label="toggle navigation"
                              onClick={toggleOpen}
             >
                 <StyledHamburger menuOpen={menuOpen} isHidden={isHidden}/>
             </StyledNavToggle>
             <StyledNavContainer isHidden={menuOpen} menuOpen={menuOpen}>
-                <StyledNav isHidden={isHidden} menuOpen={menuOpen}>
-                    <ol>
-                        {navLinks}
-                    </ol>
-                    <StyledLink href='/resume.pdf'>Resume</StyledLink>
-                </StyledNav>
+                <div ref={ref}>
+                    <StyledNav isHidden={isHidden} menuOpen={menuOpen}>
+                        <ol>
+                            {navLinks}
+                        </ol>
+                        <StyledLink href='/resume.pdf'>Resume</StyledLink>
+                    </StyledNav>
+                </div>
             </StyledNavContainer>
         </>
     )

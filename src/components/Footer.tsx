@@ -3,8 +3,8 @@ import SocialLinks from "./SocialLinks";
 import tw from "twin.macro";
 
 const StyledLink = tw.a`text-green font-medium hover:text-lightest-slate`
-const StyledFooter = tw.footer`row-start-2 col-start-2 self-end flex flex-col
- gap-2 items-center mb-4`
+const StyledFooter = tw.footer`row-start-3 col-start-2 self-end flex flex-col
+ gap-2 items-center my-4`
 
 const Footer = () => {
     return (

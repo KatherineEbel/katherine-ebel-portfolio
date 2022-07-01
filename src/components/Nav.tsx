@@ -3,8 +3,8 @@ import tw from "twin.macro";
 import styled from "styled-components";
 import {CounterListItem, StyledLink} from "./styled/styled";
 
-const navLinks = ['About', 'Experience', 'Work', 'Contact'].map((link) => (
-    <CounterListItem key={link}><a className={`text-[13px]` } href={`#${link.toLowerCase()}`}>{link}</a></CounterListItem>
+const navLinks = ['About', 'Projects', 'Contact'].map((link) => (
+    <CounterListItem key={link}><a className={`text-md` } href={`#${link.toLowerCase()}`}>{link}</a></CounterListItem>
 ))
 
 

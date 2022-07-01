@@ -6,6 +6,10 @@ import Aside from "../components/Aside";
 import SocialLinks from "../components/SocialLinks";
 import styled from "styled-components";
 import Footer from "../components/Footer";
+import Contact from "../components/sections/Contact";
+import Intro from "../components/sections/Intro";
+import About from "../components/sections/About";
+import Projects from "../components/sections/Projects";
 
 const Layout = ({children}: { children: React.ReactNode}) => (
     <>
@@ -14,10 +18,14 @@ const Layout = ({children}: { children: React.ReactNode}) => (
     </>
 )
 
-const MyLink = tw.a`text-lg bg-light-navy transition-transform duration-300
- hover:text-green hover:-translate-y-2 rotate-90`
-const EmailLink = styled(MyLink)`
-    transform-origin: 75% -175%;
+const EmailLink = tw.a`text-lg bg-light-navy transition-transform duration-300
+ hover:text-green -translate-y-28 hover:-translate-y-32 rotate-90`
+// const EmailLink = styled(MyLink)`
+//     transform-origin: 75% -175%;
+// `
+
+const StyledMain = tw.main`
+max-w-screen-lg px-12 py-8 col-start-1 col-span-3 md:col-span-1 md:col-start-2 row-start-2 flex flex-col justify-center items-center gap-24 font-sans
 `
 
 const IndexPage = () => {
@@ -26,18 +34,12 @@ const IndexPage = () => {
             <StyledAppContainer>
                 <title>Katherine Ebel</title>
                 <Header/>
-                <main className='col-start-2 md:px-12 md:py-8 col-span-1 row-start-2 font-sans'>
-                    <section className='flex flex-col gap-6 text-7xl font-black'>
-                        <h1 className='text-white tracking-wide'>
-                            Katherine Ebel
-                        </h1>
-                        <p className='text-xl text-green font-normal font-mono -order-1'>Hi, my name is</p>
-                        <p className='text-light-slate'>
-                            I build things for the web.
-                        </p>
-                        <p className='text-slate font-normal text-lg'>I am a full stack software engineer based out of Green Cove Springs, Florida</p>
-                    </section>
-                </main>
+                <StyledMain>
+                    <Intro/>
+                    <About/>
+                    <Projects/>
+                    <Contact/>
+                </StyledMain>
                 <Aside side='left'>
                     <SocialLinks/>
                 </Aside>
