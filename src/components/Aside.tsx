@@ -1,6 +1,15 @@
 import * as React from "react";
 import {ReactNode} from "react";
-import {StyledAsidePickSide} from "./styled/styled";
+import tw from "twin.macro";
+import styled from "styled-components";
+
+type StyledAsideProps = Omit<AsideProps, 'children'>
+
+const StyledAside = tw.aside`sticky bottom-0 hidden md:flex md:flex-col md:items-center gap-4 mt-auto row-span-1 row-start-2 col-span-1 text-slate hover:text-lightest-slate`
+
+export const Wrapper = styled(StyledAside)<StyledAsideProps>`
+    ${({side}) => side === 'left' ? tw`col-start-1` : tw`col-start-3`}
+`
 
 export interface AsideProps {
     children: ReactNode
@@ -9,9 +18,9 @@ export interface AsideProps {
 
 export default function Aside({ children, side }: AsideProps) {
     return (
-        <StyledAsidePickSide side={side}>
+        <Wrapper side={side}>
             {children}
-            <div className='h-36 w-[2px] bg-slate'/>
-        </StyledAsidePickSide>
+            <div className='h-24 w-[2px] bg-slate'/>
+        </Wrapper>
     )
 }

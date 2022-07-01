@@ -1,9 +1,11 @@
 import * as React from "react"
-import { GlobalStyles} from "twin.macro";
+import tw, { GlobalStyles} from "twin.macro";
 import {StyledAppContainer} from "../components/styled/styled";
 import Header from "../components/Header";
 import Aside from "../components/Aside";
 import SocialLinks from "../components/SocialLinks";
+import styled from "styled-components";
+import Footer from "../components/Footer";
 
 const Layout = ({children}: { children: React.ReactNode}) => (
     <>
@@ -11,6 +13,12 @@ const Layout = ({children}: { children: React.ReactNode}) => (
         {children}
     </>
 )
+
+const MyLink = tw.a`text-lg bg-light-navy transition-transform duration-300
+ hover:text-green hover:-translate-y-2 rotate-90`
+const EmailLink = styled(MyLink)`
+    transform-origin: 75% -175%;
+`
 
 const IndexPage = () => {
     return (
@@ -34,8 +42,9 @@ const IndexPage = () => {
                     <SocialLinks/>
                 </Aside>
                 <Aside side='right'>
-                    <a href='mailto:hello@katherineebel.com' className='-translate-y-28 rotate-90'>hello@katherineebel.com</a>
+                    <EmailLink href='mailto:hello@katherineebel.com'>hello@katherineebel.com</EmailLink>
                 </Aside>
+                <Footer/>
             </StyledAppContainer>
         </Layout>
     )

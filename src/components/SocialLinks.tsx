@@ -8,11 +8,10 @@ const SOCIAL_LINKS = {
     linkedin: 'https://www.linkedin.com/in/kathyebel'
 }
 
-const StyledSocialLink = tw.a`text-2xl`
+const StyledSocialLink = tw.a`text-2xl transition-all duration-300 hover:-translate-y-2 hover:text-green`
 
 const SocialLinks = () => {
     return (
-
         <>
             <StyledSocialLink href={SOCIAL_LINKS.github}>
                 <FiGithub/>
