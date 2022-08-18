@@ -1,8 +1,7 @@
 import tw from "twin.macro";
 import styled from "styled-components";
-import {AsideProps} from "../Aside";
 
-export const StyledAppContainer = tw.div`relative min-h-screen grid grid-cols-site grid-rows-site`
+export const StyledAppContainer = tw.div`relative max-w-7xl mx-auto pb-6 min-h-screen grid items-center grid-cols-site grid-rows-site`
 
 export const CounterListItem = styled.li`
     counter-increment: item 1;

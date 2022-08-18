@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 type StyledAsideProps = Omit<AsideProps, 'children'>
 
-const StyledAside = tw.aside`sticky bottom-0 hidden md:flex md:flex-col md:items-center gap-4 mt-auto row-span-1 row-start-2 col-span-1 text-slate hover:text-lightest-slate`
+const StyledAside = tw.aside`hidden md:flex md:flex-col md:items-center gap-4 self-end row-span-1 row-start-3 col-span-1 text-slate hover:text-lightest-slate`
 
 export const Wrapper = styled(StyledAside)<StyledAsideProps>`
     ${({side}) => side === 'left' ? tw`col-start-1` : tw`col-start-3`}

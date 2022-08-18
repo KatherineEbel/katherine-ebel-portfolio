@@ -27,7 +27,7 @@ module.exports = {
         'site': '80px 1fr 80px',
       },
       gridTemplateRows: {
-        'site': '100px 1fr 100px',
+        'site': '100px 1fr max-content',
       },
     },
   },

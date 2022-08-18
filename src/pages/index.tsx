@@ -1,10 +1,9 @@
 import * as React from "react"
 import tw, { GlobalStyles} from "twin.macro";
-import {StyledAppContainer} from "../components/styled/styled";
+import {StyledAppContainer} from 'components/styled/styled';
 import Header from "../components/Header";
 import Aside from "../components/Aside";
 import SocialLinks from "../components/SocialLinks";
-import styled from "styled-components";
 import Footer from "../components/Footer";
 import Contact from "../components/sections/Contact";
 import Intro from "../components/sections/Intro";
@@ -20,12 +19,9 @@ const Layout = ({children}: { children: React.ReactNode}) => (
 
 const EmailLink = tw.a`text-lg bg-light-navy transition-transform duration-300
  hover:text-green -translate-y-28 hover:-translate-y-32 rotate-90`
-// const EmailLink = styled(MyLink)`
-//     transform-origin: 75% -175%;
-// `
 
 const StyledMain = tw.main`
-max-w-screen-lg px-12 py-8 col-start-1 col-span-3 md:col-span-1 md:col-start-2 row-start-2 flex flex-col justify-center items-center gap-24 font-sans
+px-12 py-8 col-start-1 col-span-3 md:col-span-1 md:col-start-2 row-start-2 flex flex-col justify-center items-center gap-24 font-sans
 `
 
 const IndexPage = () => {
