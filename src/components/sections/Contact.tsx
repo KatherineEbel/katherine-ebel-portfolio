@@ -5,7 +5,7 @@ const ButtonLink = tw.a`text-green font-medium place-self-center text-xl capital
 
 const Contact = () => {
   return (
-    <section id='contact' className='flex flex-col justify-center gap-4'>
+    <section id='contact' className='flex flex-col  justify-center gap-4'>
       <div className='flex gap-4 items-center'>
         <h1 className='font-light flex-shrink-0 font-mono text-green'>
           <span className='mr-2'>03.</span>
@@ -13,11 +13,8 @@ const Contact = () => {
         </h1>
         <div className='border-t-[1px] w-full border-slate'/>
       </div>
-      <h2 className='text-lightest-slate font-bold text-4xl'>Get In Touch</h2>
       <div className='text-xl text-light-slate'>
-        <p>I am excited to start the Capstone Program at Launch School in August, and
-          am expecting to be quite busy for the next few months. </p>
-        <p className='my-2'>Following Capstone I will be open for opportunities.</p>
+        <p>Excited for what comes next. Get in touch if you'd like to work with me!</p>
       </div>
 
       <ButtonLink href='mailto:hello@katherineebel.com'>Say hello</ButtonLink>

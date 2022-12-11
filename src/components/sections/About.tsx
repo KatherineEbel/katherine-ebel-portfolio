@@ -35,10 +35,7 @@ const About = () => {
         <StyledLine/>
       </div>
       <StyledParagraphWrapper>
-        <p className='text-light-slate'>I am excited to start the Capstone Program at Launch School in August, and I
-          will be quite busy for the next few months. After that I am open for opportunities.</p>
-        <p>I got hooked on coding a few years ago. I love doing everything from front-end, back-end, devops, and mobile
-          apps</p>
+        <p>After getting hooked on coding a few years ago, I've done everything from front-end to back-end to devops and mobile apps.</p>
         <p>When I first started coding, I had a dream of building mobile apps. I quickly realized it didn't matter what
           technology I use as long as I am coding!</p>
         <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>

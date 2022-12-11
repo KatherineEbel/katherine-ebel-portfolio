@@ -12,7 +12,6 @@ const Intro = () => {
             </p>
             <div className='text-slate font-normal text-lg'>
                 <p>Full-stack software engineer based out of Green Cove Springs, Florida</p>
-                <p>I am currently preparing for the Capstone Program at <a className='font-medium tracking-wide text-light-green' href='https://launchschool.com/'>LaunchSchool</a></p>
             </div>
         </section>
     )

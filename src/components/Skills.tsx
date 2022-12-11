@@ -1,5 +1,4 @@
 import * as React from 'react'
-import { FiChevronRight} from "react-icons/fi";
 import {
     SiDocker,
     SiExpress,
@@ -11,8 +10,6 @@ import {
     SiTailwindcss,
     SiReact
 } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import {IconType} from "react-icons";
 import {ReactElement} from "react";
 import tw from "twin.macro";
 
