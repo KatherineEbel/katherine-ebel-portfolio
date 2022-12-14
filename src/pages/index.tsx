@@ -21,7 +21,7 @@ const EmailLink = tw.a`text-lg bg-light-navy transition-transform duration-300
  hover:text-green -translate-y-28 hover:-translate-y-32 rotate-90`
 
 const StyledMain = tw.main`
-px-12 py-8 col-start-1 col-span-3 md:col-span-1 md:col-start-2 row-start-2 flex flex-col justify-center items-center gap-24 font-sans
+px-6 md:px-12 py-8 col-start-1 col-span-3 md:col-span-1 md:col-start-2 row-start-2 flex flex-col justify-center items-center gap-24 font-sans
 `
 
 const IndexPage = () => {

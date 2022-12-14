@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='flex gap-4 md:hidden'>
                 <SocialLinks/>
             </div>
-            <p className='text-xs my-4 md:my-0'>Original design by <StyledLink href='https://brittanychiang.com/'>Brittany Chiang</StyledLink></p>
+            <p className='text-xs whitespace-nowrap my-4 md:my-0'>Original design by <StyledLink href='https://brittanychiang.com/'>Brittany Chiang</StyledLink></p>
         </StyledFooter>
     )
 }

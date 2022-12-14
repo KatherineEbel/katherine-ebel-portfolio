@@ -12,7 +12,7 @@ interface ProjectProps extends PropsWithChildren{
 
 export default function Project ({children, title, githubURL, screenshotURL, websiteURL}: ProjectProps) {
   return (
-    <section className='grid gap-4 md:grid-cols-2 md:grid-rows-12'>
+    <section className='grid gap-4 md:gap-10 md:grid-cols-2 md:grid-rows-12'>
       <header className='flex items-start justify-between md:col-start-2 md:row-start-1 md:row-span-4 md:gap-8'>
         <h3 className='text-3xl font-bold'>{title}</h3>
         <div className='flex gap-4 text-2xl '>
@@ -24,7 +24,7 @@ export default function Project ({children, title, githubURL, screenshotURL, web
           </a>
         </div>
       </header>
-      <img className='md:col-span-1 md:row-start-4 md:row-span-full' src={screenshotURL} alt={title + " screenshot"} />
+      <img className='md:col-span-1 m-auto max-w-[80%] md:row-start-4 md:row-span-full' src={screenshotURL} alt={title + " screenshot"} />
       <div className='rounded-lg md:relative md:row-start-2 md:col-start-2 bg-light-navy p-4 grid place-items-center'>
         {children}
       </div>

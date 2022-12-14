@@ -1,7 +1,7 @@
 import * as React from 'react'
 import tw from 'twin.macro'
 
-const ButtonLink = tw.a`text-green font-medium place-self-center text-xl capitalize border border-green my-6 py-4 px-6 rounded hover:bg-teal-100 hover:bg-opacity-10 transition-opacity duration-300`
+const ButtonLink = tw.a`text-green whitespace-nowrap font-medium place-self-center text-sm md:text-xl capitalize border border-green my-6 py-2 px-4 md:py-4 md:px-6 rounded hover:bg-teal-100 hover:bg-opacity-10 transition-opacity duration-300`
 
 const Contact = () => {
   return (
@@ -17,7 +17,11 @@ const Contact = () => {
         <p>Excited for what comes next. Get in touch if you'd like to work with me!</p>
       </div>
 
-      <ButtonLink href='mailto:hello@katherineebel.com'>Say hello</ButtonLink>
+      <div className='flex gap-4 m-auto'>
+        <ButtonLink href='mailto:hello@katherineebel.com'>Say hello</ButtonLink>
+        <ButtonLink href='/resume.pdf'>Check out My Resume</ButtonLink>
+      </div>
+
     </section>
   )
 }

@@ -68,10 +68,10 @@ const Skills = () => {
     return (
         <>
             {Object.values(SKILL_MAP).map(({link, icon, name}) => (
-                <StyledListItem>
+                <StyledListItem key={name}>
                     <a className='flex flex-col place-items-center' href={link}>
                         {icon}
-                        <span className='text-xs'>
+                        <span className='text-[10px]'>
                         {name}
                         </span>
                     </a>
