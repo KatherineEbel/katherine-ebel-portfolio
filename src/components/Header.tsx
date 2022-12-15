@@ -12,7 +12,6 @@ export default function Header() {
     const [open, setOpen] = useState(false)
     const mobile = useMediaQuery(json2mq({maxWidth: 768}))
     const toggleOpen = () => {
-        console.log('toggle open')
         setOpen(!open)
     }
     return (

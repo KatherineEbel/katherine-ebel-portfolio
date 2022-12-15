@@ -1,4 +1,4 @@
-import {FiGithub, FiLinkedin, FiTwitter} from "react-icons/fi";
+import {FiGithub, FiLinkedin} from "react-icons/fi";
 import {SiCodewars } from 'react-icons/si'
 import * as React from "react";
 import tw from "twin.macro";
@@ -6,7 +6,6 @@ import tw from "twin.macro";
 const SOCIAL_LINKS = {
     codewars: 'https://www.codewars.com/users/KatherineEbel',
     github: 'https://github.com/KatherineEbel',
-    twitter: 'https://twitter.com/Kathy_Ebel',
     linkedin: 'https://www.linkedin.com/in/kathyebel'
 }
 
@@ -24,9 +23,6 @@ const SocialLinks = () => {
             </StyledSocialLink>
             <StyledSocialLink href={SOCIAL_LINKS.linkedin}>
                 <FiLinkedin/>
-            </StyledSocialLink>
-            <StyledSocialLink href={SOCIAL_LINKS.twitter}>
-                <FiTwitter/>
             </StyledSocialLink>
         </>
 )

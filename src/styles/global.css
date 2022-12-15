@@ -15,5 +15,6 @@
 }
 
 body {
-    @apply bg-navy text-white font-mono font-light
+    @apply bg-navy text-white font-mono font-light;
+    scroll-behavior: smooth;
 }

@@ -2,9 +2,12 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {CounterListItem, StyledLink} from "./styled/styled";
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const navLinks = ['About', 'Projects', 'Contact'].map((link) => (
-    <CounterListItem key={link}><a className={`text-md` } href={`#${link.toLowerCase()}`}>{link}</a></CounterListItem>
+    <CounterListItem key={link}><button className={`text-md` }
+                                        onClick={() => scrollTo(`#${link.toLowerCase()}`)}
+    >{link}</button></CounterListItem>
 ))
 
 

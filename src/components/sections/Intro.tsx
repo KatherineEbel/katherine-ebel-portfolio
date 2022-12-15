@@ -10,9 +10,6 @@ const Intro = () => {
             <p className='text-light-slate'>
                 I build things for the web.
             </p>
-            <div className='text-slate font-normal text-lg'>
-                <p>Full-stack software engineer based out of Green Cove Springs, Florida</p>
-            </div>
         </section>
     )
 }

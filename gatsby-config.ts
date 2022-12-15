@@ -9,7 +9,7 @@ const config: GatsbyConfig = {
     // If you use VSCode you can also use the GraphQL plugin
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
-    plugins: ['gatsby-plugin-styled-components', 'gatsby-plugin-postcss',
+    plugins: ['gatsby-plugin-smoothscroll', 'gatsby-plugin-styled-components', 'gatsby-plugin-postcss',
         {
             resolve: 'gatsby-plugin-your-fonts',
             options: {

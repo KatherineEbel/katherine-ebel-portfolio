@@ -17,7 +17,7 @@ const Projects = () => {
             </header>
           <p className='text-lightest-slate text-xl'>Here are a couple of my most recent projects</p>
           <Project screenshotURL={Skopos} title={'Skopos'} githubURL={'https://github.com/skopos-api-monitoring'} websiteURL={'https://skopos-api-monitoring.github.io'}>
-            <p className='text-center'>Open Source API monitoring tool for testing multi-step API workflows</p>
+            <p className='text-center mb-2'>Open Source API monitoring tool for testing multi-step API workflows</p>
             <ul className='list-none list-inside flex flex-col lg:flex-row gap-4 font-medium text-light-green'>
               <li>React</li>
               <li>GraphQL</li>
@@ -27,7 +27,7 @@ const Projects = () => {
             </ul>
           </Project>
           <Project screenshotURL={JobHunt} title={'JobHunt'} githubURL={'https://github.com/KatherineEbel/jobhunt'} websiteURL={'https://jobhunt.kathyebel.me'}>
-            <p className='text-center'>Full-stack application to track your job applications</p>
+            <p className='text-center mb-2'>Full-stack application to track your job applications</p>
             <ul className='list-none list-inside flex flex-col lg:flex-row gap-4 font-medium text-light-green'>
               <li>React</li>
               <li>Express</li>
@@ -37,7 +37,7 @@ const Projects = () => {
             </ul>
           </Project>
           <Project screenshotURL={Minesweeper} title={'Minesweeper'} githubURL='https://github.com/KatherineEbel/minesweeper' websiteURL='https://minesweeper.kathyebel.me/'>
-            <p className='text-center'>Hopefully you are better at this game than I am 😅</p>
+            <p className='text-center mb-2'>Hopefully you are better at this game than I am 😅</p>
             <ul className='list-none list-inside flex flex-col md:flex-row gap-4 font-medium text-light-green'>
               <li>React</li>
               <li>Redux</li>

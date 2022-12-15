@@ -35,12 +35,18 @@ const About = () => {
         <StyledLine/>
       </div>
       <StyledParagraphWrapper>
-        <p>After getting hooked on coding a few years ago, I've done everything from front-end to back-end to devops and mobile apps.</p>
-        <p>When I first started coding, I had a dream of building mobile apps. I quickly realized it didn't matter what
-          technology I use as long as I am coding!</p>
+        <p>I am a Full-stack software engineer based out of Green Cove Springs, Florida.</p>
+        <p>I was recently able to collaborate with a remote team to build <strong>Skopos</strong>, <em>an open source
+          API Monitoring tool</em>. It was a great experience, and I thoroughly enjoyed every part of it.</p>
+        <p>I am open to new opportunities in which I can continue to grow as an engineer and provide meaningful
+          contributions.</p>
+
+        <p>I enjoy tinkering with my own virtual private server where I host any projects I want to share. Aside from
+          coding, I also love the outdoors. I enjoy camping with my family, riding my Harley, and riding ATVs.</p>
         <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>
       </StyledParagraphWrapper>
-      <ul className='grid items-center place-items-center self-center col-span-full grid-cols-3 md:grid-cols-9 gap-4 md:self-start'>
+      <ul
+        className='grid items-center place-items-center self-center col-span-full grid-cols-3 md:grid-cols-9 gap-4 md:self-start'>
         <Skills/>
       </ul>
       <ImageWrapper>
