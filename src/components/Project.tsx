@@ -6,19 +6,21 @@ import { GoLinkExternal } from 'react-icons/go'
 interface ProjectProps extends PropsWithChildren{
   title: string
   screenshotURL: string
-  githubURL: string
+  githubURL?: string
   websiteURL: string
 }
 
 export default function Project ({children, title, githubURL, screenshotURL, websiteURL}: ProjectProps) {
   return (
-    <section className='grid gap-4 md:gap-10 md:grid-cols-2 md:grid-rows-12'>
+    <section className='grid gap-4 text-lg md:gap-10 md:grid-cols-2 md:grid-rows-12'>
       <header className='flex items-start justify-between md:col-start-2 md:row-start-1 md:row-span-4 md:gap-8'>
         <h3 className='text-3xl font-bold'>{title}</h3>
         <div className='flex gap-4 text-2xl '>
-          <a href={githubURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3'>
-            <FiGithub />
-          </a>
+          {githubURL && (
+            <a href={githubURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3'>
+              <FiGithub />
+            </a>
+          )}
           <a href={websiteURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3'>
             <GoLinkExternal />
           </a>
