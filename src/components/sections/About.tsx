@@ -35,10 +35,10 @@ const About = () => {
         <StyledLine/>
       </div>
       <StyledParagraphWrapper>
-        <p>I am a Full-stack software engineer based out of Green Cove Springs, Florida.</p>
-        <p>I was recently able to collaborate with a remote team to build <strong>Skopos</strong>, <em>an open source
-          API Monitoring tool</em>. It was a great experience, and I thoroughly enjoyed every part of it.</p>
-        <p>I am open to new opportunities in which I can continue to grow as an engineer and provide meaningful
+        <p>I am a Full-stack software engineer based out of Green Cove Springs, Florida.
+          I was recently able to collaborate with a remote team to build <strong>Skopos</strong>, <em>an open source
+            API Monitoring tool</em>. It was a great experience, and I thoroughly enjoyed every part of it.
+          I am open to new opportunities in which I can continue to grow as an engineer and provide meaningful
           contributions.</p>
 
         <p>I enjoy tinkering with my own virtual private server where I host any projects I want to share. Aside from
