@@ -36,7 +36,7 @@ const SKILL_MAP: Record<string, {link: string, icon: ReactElement, name: string}
     },
     rails: {
         name: 'Rails',
-        link: 'https://rails.org',
+        link: 'https://rubyonrails.org/',
         icon: <SiRubyonrails/>,
     },
     react:{
@@ -69,7 +69,7 @@ const Skills = () => {
         <>
             {Object.values(SKILL_MAP).map(({link, icon, name}) => (
                 <StyledListItem key={name}>
-                    <a className='flex flex-col place-items-center' href={link}>
+                    <a className='flex flex-col place-items-center' href={link} target="_blank" rel="noopener noreferrer">
                         {icon}
                         <span className='text-[10px]'>
                         {name}

@@ -17,16 +17,16 @@ export default function Project ({children, title, githubURL, screenshotURL, web
         <h3 className='text-3xl font-bold'>{title}</h3>
         <div className='flex gap-4 text-2xl '>
           {githubURL && (
-            <a href={githubURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3'>
+            <a href={githubURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3' target="_blank" rel="noopener noreferrer">
               <FiGithub />
             </a>
           )}
-          <a href={websiteURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3'>
+          <a href={websiteURL} className='hover:text-green transition-all duration-300 hover:-translate-y-3' target="_blank" rel="noopener noreferrer">
             <GoLinkExternal />
           </a>
         </div>
       </header>
-      <img className='md:col-span-1 m-auto max-w-[80%] md:row-start-4 md:row-span-full' src={screenshotURL} alt={title + " screenshot"} />
+      <img className='md:col-span-1 m-auto md:row-start-4 md:row-span-full' src={screenshotURL} alt={title + " screenshot"} />
       <div className='rounded-lg md:relative md:row-start-2 md:col-start-2 bg-light-navy p-4 grid place-items-center'>
         {children}
       </div>

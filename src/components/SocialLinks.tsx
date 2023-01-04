@@ -15,19 +15,19 @@ export const StyledSocialLink = tw.a`text-2xl transition-transform duration-300 
 const SocialLinks = () => {
     return (
         <>
-          <StyledSocialLink href={SOCIAL_LINKS.leetcode}>
-            <SiLeetcode/>
-          </StyledSocialLink>
-          <StyledSocialLink href={SOCIAL_LINKS.codewars}>
-                <SiCodewars/>
-            </StyledSocialLink>
-
-            <StyledSocialLink href={SOCIAL_LINKS.github}>
+            <StyledSocialLink href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer">
                 <FiGithub/>
             </StyledSocialLink>
-            <StyledSocialLink href={SOCIAL_LINKS.linkedin}>
+            <StyledSocialLink href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer">
                 <FiLinkedin/>
             </StyledSocialLink>
+          <StyledSocialLink href={SOCIAL_LINKS.leetcode} target="_blank" rel="noopener noreferrer">
+            <SiLeetcode/>
+          </StyledSocialLink>
+          <StyledSocialLink href={SOCIAL_LINKS.codewars} target="_blank" rel="noopener noreferrer">
+            <SiCodewars/>
+          </StyledSocialLink>
+
         </>
 )
 }
