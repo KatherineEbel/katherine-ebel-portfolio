@@ -25,35 +25,45 @@ const StyledLine = tw.div`border-t-[1px] border-slate w-full`
 
 
 const About = () => {
-  return (
-    <StyledSection id='about'>
-      <div className='col-span-2 flex items-center gap-4'>
-        <StyledHeading>
-          <StyledNumber>01.</StyledNumber>
-          About Me
-        </StyledHeading>
-        <StyledLine/>
-      </div>
-      <StyledParagraphWrapper>
-        <p>I am a Full-stack software engineer based out of Green Cove Springs, Florida.
-          I was recently able to collaborate with a remote team to build <strong>Skopos</strong>, <em>an open source
-            API Monitoring tool</em>. It was a great experience, and I thoroughly enjoyed every part of it.
-          I am actively looking for new opportunities in which I can continue to grow as an engineer and provide meaningful
-          contributions.</p>
+    return (
+        <StyledSection id='about'>
+            <div className='col-span-2 flex items-center gap-4'>
+                <StyledHeading>
+                    <StyledNumber>01.</StyledNumber>
+                    About Me
+                </StyledHeading>
+                <StyledLine/>
+            </div>
+            <StyledParagraphWrapper>
+                <p>Hello! I'm Kathy, a Full-Stack Software Engineer based in Green Cove Springs, Florida. Currently, I'm
+                    putting my skills to work at Hare Media Group, where I've quickly ramped up on Java and Spring Boot,
+                    becoming an integral part of a nimble remote team. In this role, I've had the chance to contribute
+                    to various projects, including architecting a high-performing front-end with TailwindCSS, Pebble,
+                    and AlpineJS.</p>
 
-        <p>I enjoy tinkering with my own virtual private server where I host any projects I want to share. Aside from
-          coding, I also love the outdoors. I enjoy camping with my family, riding my Harley, and riding ATVs.</p>
-        <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>
-      </StyledParagraphWrapper>
-      <ul
-        className='grid items-center place-items-center self-center col-span-full grid-cols-3 md:grid-cols-9 gap-4 md:self-start'>
-        <Skills/>
-      </ul>
-      <ImageWrapper>
-        <StyledImage src={Me} alt='headshot'/>
-      </ImageWrapper>
-    </StyledSection>
-  )
+                <p>Prior to Hare Media, I collaborated on <strong>Skopos</strong>, an open-source API monitoring tool
+                    that sharpened my expertise and fueled my passion for software development. Whether I'm working
+                    remotely for Hare Media Group or diving into side projects, I continually seek opportunities to grow
+                    and make a meaningful impact.</p>
+
+                <p>Aside from my day job, I also keep myself busy managing a virtual private server, which serves as a
+                    sandbox for my personal projects and tech experiments.</p>
+
+                <p>When I'm not behind a computer screen, I love hitting the open road on my Harley, exploring nature
+                    with my family, or tackling trails on my ATV. These activities are among my favorite ways to
+                    recharge and find inspiration.</p>
+
+                <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>
+            </StyledParagraphWrapper>
+            <ul
+                className='grid items-center place-items-center self-center col-span-full grid-cols-3 md:grid-cols-9 gap-4 md:self-start'>
+                <Skills/>
+            </ul>
+            <ImageWrapper>
+                <StyledImage src={Me} alt='headshot'/>
+            </ImageWrapper>
+        </StyledSection>
+    )
 }
 
 export default About
