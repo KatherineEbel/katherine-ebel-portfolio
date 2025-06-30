@@ -28,7 +28,7 @@ const Nav = ({ isHidden }: NavProps) => {
             <StyledOl>
                 {navLinks}
             </StyledOl>
-            <StyledLink href='https://katherineebel.com/resume.pdf'>Resume</StyledLink>
+            <StyledLink href='https://katherineebel.com/KatherineEbelSoftwareEngineerResume.pdf'>Resume</StyledLink>
         </StyledNav>
     )
 }
