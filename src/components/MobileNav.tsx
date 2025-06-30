@@ -69,7 +69,7 @@ const MobileNav = ({isHidden, menuOpen, toggleOpen}: MobileNavProps) => {
                         <ol>
                             {navLinks}
                         </ol>
-                        <StyledLink href='/resume.pdf'>Resume</StyledLink>
+                        <StyledLink href='/KatherineEbelSoftwareEngineerResume.pdf'>Resume</StyledLink>
                     </StyledNav>
                 </div>
             </StyledNavContainer>

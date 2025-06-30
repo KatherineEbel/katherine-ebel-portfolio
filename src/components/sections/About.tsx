@@ -35,25 +35,22 @@ const About = () => {
                 <StyledLine/>
             </div>
             <StyledParagraphWrapper>
-                <p>Hello! I'm Kathy, a Full-Stack Software Engineer based in Green Cove Springs, Florida. Currently, I'm
-                    putting my skills to work at Hare Media Group, where I've quickly ramped up on Java and Spring Boot,
-                    becoming an integral part of a nimble remote team. In this role, I've had the chance to contribute
-                    to various projects, including architecting a high-performing front-end with TailwindCSS, Pebble,
-                    and AlpineJS.</p>
-
-                <p>Prior to Hare Media, I collaborated on <strong>Skopos</strong>, an open-source API monitoring tool
-                    that sharpened my expertise and fueled my passion for software development. Whether I'm working
-                    remotely for Hare Media Group or diving into side projects, I continually seek opportunities to grow
-                    and make a meaningful impact.</p>
-
-                <p>Aside from my day job, I also keep myself busy managing a virtual private server, which serves as a
-                    sandbox for my personal projects and tech experiments.</p>
-
-                <p>When I'm not behind a computer screen, I love hitting the open road on my Harley, exploring nature
-                    with my family, or tackling trails on my ATV. These activities are among my favorite ways to
-                    recharge and find inspiration.</p>
-
-                <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>
+              <p>
+                Hi, I’m <strong>Kathy</strong>—a detail-oriented Full-Stack Software Engineer based in Green Cove Springs, Florida.
+              </p>
+              <p>
+                Most recently, I worked at Hare Media Group, where I quickly got up to speed with Java and Spring Boot. Working within a small, remote team allowed me to contribute to key projects and broaden my full-stack development skills.
+              </p>
+              <p>
+                Before that, I co-created Skopos, an open-source API monitoring tool that helped me sharpen my skills and deepen my understanding of software development. I’m always looking for ways to learn and improve, whether through contract work, side projects, or exploring new tech.
+              </p>
+              <p>
+                I also manage a virtual private server at home, which I use as a sandbox for experimenting with tech and building personal projects.
+              </p>
+              <p>
+                When I’m not coding, I like riding my Harley and exploring nature with my family. Those moments help me recharge and keep me inspired.
+              </p>
+              <p className='self-start'>Some of the recent technologies and languages I've been using are:</p>
             </StyledParagraphWrapper>
             <ul
                 className='grid items-center place-items-center self-center col-span-full grid-cols-3 md:grid-cols-9 gap-4 md:self-start'>
